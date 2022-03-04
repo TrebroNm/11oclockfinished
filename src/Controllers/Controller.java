@@ -14,10 +14,12 @@ public class Controller {
 				ctr.addToStack(card);
 			}
 		}
-		ctr.shuffle();
+		shuffle();
 	}
 	
-
+	public void shuffle() {
+		ctr.shuffle();
+	}
 	
 	
 	private String getNumber(int n) {
