@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Hand {
 
-	ArrayList<Card> handOfCards;
+	ArrayList<Card> handOfCards = new ArrayList<>();
 
 	public Hand() {
 		//this should be limited to 6
@@ -42,5 +42,11 @@ public class Hand {
 	public ArrayList<Card> getAllCards() {
 		return handOfCards;
 		
+	}
+	
+	public void printCards() {
+		for(Card c : handOfCards) {
+			System.out.println(c.getNumber() + "    " + c.getSuit());
+		}
 	}
 }

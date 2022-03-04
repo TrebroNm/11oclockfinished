@@ -18,6 +18,11 @@ public class Controller {
 			}
 		}
 		shuffle();
+		ctr.getHand().addToHand(ctr.takeCard());
+		ctr.getHand().addToHand(ctr.takeCard());
+		ctr.getHand().addToHand(ctr.takeCard());
+		ctr.getHand().addToHand(ctr.takeCard());
+		ctr.getHand().printCards();
 	}
 	
 	public void shuffle() {

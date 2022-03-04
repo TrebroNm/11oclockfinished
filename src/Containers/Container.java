@@ -22,6 +22,7 @@ public class Container {
 		cards.add(c);
 	}
 	
+	
 	public void shuffle() {
 		Collections.shuffle(cards);
 	}
