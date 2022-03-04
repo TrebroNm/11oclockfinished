@@ -6,9 +6,8 @@ public class Hand {
 
 	ArrayList<Card> handOfCards;
 
-	public Hand(ArrayList<Card> handOfCards) {
+	public Hand() {
 		//this should be limited to 6
-		this.handOfCards = handOfCards;
 	}
 	
 	//binary search implementation

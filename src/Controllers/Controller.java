@@ -2,12 +2,15 @@ package Controllers;
 
 import Containers.Container;
 import model.Card;
+import model.Hand;
 
 public class Controller {
 
 	Container ctr = Container.getInstance();
 	
 	public void createCards() {
+		Hand hand = new Hand();
+		ctr.setHand(hand);
 		for(int n = 2; n<=14; n++) {
 			for(int s = 1; s<=4; s++) {
 				Card card = new Card(getNumber(n), getSuit(s));
