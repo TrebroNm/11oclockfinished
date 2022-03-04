@@ -8,7 +8,7 @@ public class Controller {
 	Container ctr = Container.getInstance();
 	
 	public void createCards() {
-		for(int n = 1; n<=13; n++) {
+		for(int n = 2; n<=14; n++) {
 			for(int s = 1; s<=4; s++) {
 				Card card = new Card(getNumber(n), getSuit(s));
 				ctr.addToStack(card);
@@ -35,6 +35,9 @@ public class Controller {
 				number = "K";
 				break;
 			case 13:
+				number = "A";
+				break;
+			case 14:
 				number = "A";
 				break;
 			}
