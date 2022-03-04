@@ -12,7 +12,7 @@ public class Hand {
 	
 	//binary search implementation
 	public Card getCardFromHand(int cardToFind) {
-		/*
+		
 		int left = 0;
 		int pivot = 0;
 		int right = handOfCards.size();
@@ -20,18 +20,17 @@ public class Hand {
 		while (left < right) {
 			pivot = left - (right - left) / 2;
 			
-			if (handOfCards.get(pivot).getNumber() == cardToFind) {
-				return pivot;
+			if (Integer.parseInt(handOfCards.get(pivot).getNumber()) == cardToFind) {
+				return handOfCards.get(pivot);
 			}
-			else if (handOfCards.get(pivot).getNumber() < cardToFind) {
+			else if (Integer.parseInt(handOfCards.get(pivot).getNumber()) < cardToFind) {
 				left = pivot + 1;
 			} else {
 				right = pivot - 1;
 			}
 		}
-		*/
-		//not finished
-		return handOfCards.get(cardToFind);
+		
+		return new Card("-1", "");
 	}
 		
 	public void addToHand(Card card) {
